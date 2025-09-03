@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias - EcoTrend</title>
+    <meta name="description" content="Explore nossa coleção de produtos sustentáveis por categoria. Moda, beleza, casa e tecnologia verde com preços competitivos.">
+    
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages/categorias.css">
+</head>
+<body>
+    
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <i class="bi bi-leaf-fill text-success"></i>
+                <span class="ms-2 fw-bold">EcoTrend</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/categorias.html">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contato.html">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="container-busca me-3">
+                        <div class="caixa-busca">
+                            <input type="text" class="input-busca" placeholder="Buscar produtos sustentáveis...">
+                            <button class="botao-busca" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline-success position-relative">
+                        <i class="bi bi-cart3"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active"><a href="../index.html">Início</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Categorias</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    
+    <main class="container py-5">
+        <div class="row">
+           
+            <div class="col-lg-3">
+                <div class="barra-filtros">
+                    <h4 class="mb-4">Filtros</h4>
+                    
+                    
+                    <div class="grupo-filtro">
+                        <h6><i class="bi bi-tags"></i> Categorias</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="moda" checked>
+                            <label class="form-check-label" for="moda">
+                                Moda Sustentável
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="beleza">
+                            <label class="form-check-label" for="beleza">
+                                Beleza Natural
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="casa">
+                            <label class="form-check-label" for="casa">
+                                Casa Sustentável
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="tech">
+                            <label class="form-check-label" for="tech">
+                                Tecnologia Verde
+                            </label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="grupo-filtro">
+                        <h6><i class="bi bi-currency-dollar"></i> Faixa de Preço</h6>
+                        <div class="faixa-preco">
+                            <input type="range" class="form-range" id="priceRange" min="0" max="500" value="500">
+                            <div class="valores-preco">
+                                <span>R$ 0</span>
+                                <span>R$ 500</span>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    <div class="grupo-filtro">
+                        <h6><i class="bi bi-award"></i> Marcas</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="marca1">
+                            <label class="form-check-label" for="marca1">
+                                EcoFashion
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="marca2">
+                            <label class="form-check-label" for="marca2">
+                                GreenBeauty
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="marca3">
+                            <label class="form-check-label" for="marca3">
+                                SustainableHome
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="marca4">
+                            <label class="form-check-label" for="marca4">
+                                TechGreen
+                            </label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="grupo-filtro">
+                        <h6><i class="bi bi-star"></i> Avaliações</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rating5">
+                            <label class="form-check-label" for="rating5">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rating4">
+                            <label class="form-check-label" for="rating4">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star text-warning"></i>
+                                e acima
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rating3">
+                            <label class="form-check-label" for="rating3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star text-warning"></i>
+                                <i class="bi bi-star text-warning"></i>
+                                e acima
+                            </label>
+                        </div>
+                    </div>
+
+                    
+                    <button class="btn limpar-filtros w-100" onclick="clearAllFilters()">
+                        <i class="bi bi-x-circle me-2"></i>
+                        Limpar Filtros
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-9">
+                
+                <div class="cabecalho-produtos">
+                    <div class="contagem-produtos">
+                        Mostrando <strong>8</strong> de <strong>24</strong> produtos
+                    </div>
+                    <select class="seletor-ordenacao" onchange="sortProducts(this.value)">
+                        <option value="relevance">Mais Relevantes</option>
+                        <option value="price-low">Menor Preço</option>
+                        <option value="price-high">Maior Preço</option>
+                        <option value="rating">Melhor Avaliados</option>
+                        <option value="newest">Mais Recentes</option>
+                    </select>
+                </div>
+
+                
+                <div class="grade-produtos" id="productsGrid">
+                    
+                    <div class="cartao-produto">
+                        <div class="imagem-produto">
+                            <img src="../assets/imgs/camiseta.png" alt="Camiseta Orgânica">
+                            <div class="badges-produto">
+                                <span class="badge badge-new">Novo</span>
+                                <span class="badge badge-eco">Eco</span>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h5 class="titulo-produto">Camiseta Orgânica Premium</h5>
+                            <p class="marca-produto">EcoFashion</p>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 89,90</span>
+                                <span class="preco-antigo">R$ 119,90</span>
+                                <span class="desconto">-25%</span>
+                            </div>
+                            <div class="avaliacao-produto">
+                                <div class="estrelas">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <span class="contagem-avaliacoes">(127)</span>
+                            </div>
+                            <button class="botao-adicionar-carrinho" onclick="addToCart(1)">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="cartao-produto">
+                        <div class="imagem-produto">
+                            <img src="../assets/imgs/shampoo.png" alt="Shampoo Natural">
+                            <div class="badges-produto">
+                                <span class="badge badge-sale">Oferta</span>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h5 class="titulo-produto">Shampoo Sólido Natural</h5>
+                            <p class="marca-produto">GreenBeauty</p>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 45,90</span>
+                            </div>
+                            <div class="avaliacao-produto">
+                                <div class="estrelas">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="contagem-avaliacoes">(89)</span>
+                            </div>
+                            <button class="botao-adicionar-carrinho" onclick="addToCart(2)">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="cartao-produto">
+                        <div class="imagem-produto">
+                            <img src="../assets/imgs/vaso.png" alt="Vaso Biodegradável">
+                            <div class="badges-produto">
+                                <span class="badge badge-eco">Eco</span>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h5 class="titulo-produto">Vaso Biodegradável Grande</h5>
+                            <p class="marca-produto">SustainableHome</p>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 32,90</span>
+                            </div>
+                            <div class="avaliacao-produto">
+                                <div class="estrelas">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <span class="contagem-avaliacoes">(56)</span>
+                            </div>
+                            <button class="botao-adicionar-carrinho" onclick="addToCart(3)">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="cartao-produto">
+                        <div class="imagem-produto">
+                            <img src="../assets/imgs/carregador.png" alt="Carregador Solar">
+                            <div class="badges-produto">
+                                <span class="badge badge-new">Novo</span>
+                                <span class="badge badge-eco">Eco</span>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h5 class="titulo-produto">Carregador Solar Portátil</h5>
+                            <p class="marca-produto">TechGreen</p>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 129,90</span>
+                                <span class="preco-antigo">R$ 159,90</span>
+                                <span class="desconto">-19%</span>
+                            </div>
+                            <div class="avaliacao-produto">
+                                <div class="estrelas">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="contagem-avaliacoes">(203)</span>
+                            </div>
+                            <button class="botao-adicionar-carrinho" onclick="addToCart(4)">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="cartao-produto">
+                        <div class="imagem-produto">
+                            <img src="../assets/imgs/garrafa.png" alt="Garrafa Reutilizável">
+                            <div class="badges-produto">
+                                <span class="badge badge-eco">Eco</span>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h5 class="titulo-produto">Garrafa de Água Sustentável</h5>
+                            <p class="marca-produto">EcoFashion</p>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 65,90</span>
+                            </div>
+                            <div class="avaliacao-produto">
+                                <div class="estrelas">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <span class="contagem-avaliacoes">(78)</span>
+                            </div>
+                            <button class="botao-adicionar-carrinho" onclick="addToCart(5)">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="cartao-produto">
+                        <div class="imagem-produto">
+                            <img src="../assets/imgs/sabonete.png" alt="Sabonete Natural">
+                            <div class="badges-produto">
+                                <span class="badge badge-sale">Oferta</span>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h5 class="titulo-produto">Sabonete Artesanal Natural</h5>
+                            <p class="marca-produto">GreenBeauty</p>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 28,90</span>
+                                <span class="preco-antigo">R$ 38,90</span>
+                                <span class="desconto">-26%</span>
+                            </div>
+                            <div class="avaliacao-produto">
+                                <div class="estrelas">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <span class="contagem-avaliacoes">(42)</span>
+                            </div>
+                            <button class="botao-adicionar-carrinho" onclick="addToCart(6)">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="cartao-produto">
+                        <div class="imagem-produto">
+                            <img src="../assets/imgs/luminaria.png" alt="Luminária LED">
+                            <div class="badges-produto">
+                                <span class="badge badge-eco">Eco</span>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h5 class="titulo-produto">Luminária LED Solar</h5>
+                            <p class="marca-produto">SustainableHome</p>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 89,90</span>
+                            </div>
+                            <div class="avaliacao-produto">
+                                <div class="estrelas">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="contagem-avaliacoes">(156)</span>
+                            </div>
+                            <button class="botao-adicionar-carrinho" onclick="addToCart(7)">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="cartao-produto">
+                        <div class="imagem-produto">
+                            <img src="../assets/imgs/fone.png" alt="Fone de Ouvido">
+                            <div class="badges-produto">
+                                <span class="badge badge-new">Novo</span>
+                            </div>
+                        </div>
+                        <div class="info-produto">
+                            <h5 class="titulo-produto">Fone de Ouvido Reciclado</h5>
+                            <p class="marca-produto">TechGreen</p>
+                            <div class="preco-produto">
+                                <span class="preco-atual">R$ 199,90</span>
+                            </div>
+                            <div class="avaliacao-produto">
+                                <div class="estrelas">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <span class="contagem-avaliacoes">(89)</span>
+                            </div>
+                            <button class="botao-adicionar-carrinho" onclick="addToCart(8)">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="pagination-section">
+                    <nav aria-label="Navegação de páginas">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Próximo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Sobre a EcoTrend</h5>
+                    <p>Somos uma empresa comprometida com a sustentabilidade, oferecendo produtos que respeitam o meio ambiente e promovem um estilo de vida consciente.</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Links Úteis</h5>
+                    <ul>
+                        <li><a href="../../index.html">Início</a></li>
+                        <li><a href="categorias.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Categorias</h5>
+                    <ul>
+                        <li><a href="categorias.html">Moda Sustentável</a></li>
+                        <li><a href="categorias.html">Beleza Natural</a></li>
+                        <li><a href="categorias.html">Casa Sustentável</a></li>
+                        <li><a href="categorias.html">Tecnologia Verde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Contato</h5>
+                    <ul>
+                        <li><i class="bi bi-envelope me-2"></i>contato@ecotrend.com</li>
+                        <li><i class="bi bi-telephone me-2"></i>(11) 99999-9999</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>São Paulo, SP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EcoTrend. Todos os direitos reservados. </p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiseta Orgânica Premium - EcoTrend</title>
+    <meta name="description" content="Camiseta orgânica premium feita com algodão 100% orgânico e corantes naturais. Produto sustentável e confortável para o dia a dia.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages/produto.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <i class="bi bi-leaf-fill text-success"></i>
+                <span class="ms-2 fw-bold">EcoTrend</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/categorias.html">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contato.html">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-outline-success me-3">
+                        <i class="bi bi-search"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-success position-relative">
+                        <i class="bi bi-cart3"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
+                    <li class="breadcrumb-item"><a href="categorias.html">Categorias</a></li>
+                    <li class="breadcrumb-item"><a href="categorias.html">Moda Sustentável</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Camiseta Orgânica Premium</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row">
+            <!-- Galeria de Imagens -->
+            <div class="col-lg-6">
+                    <div class="galeria-produto">
+                    <div class="container-imagem-principal">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Camiseta Orgânica Premium" class="imagem-principal" id="mainImage">
+                        <div class="sobreposicao-zoom-imagem">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                    <div class="container-miniaturas">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Vista 1" class="miniatura active" onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Vista 2" class="miniatura" onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Vista 3" class="miniatura" onclick="changeImage(this.src)">
+                        <img src="https://images.unsplash.com/photo-1544866092-1677b00f868b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Vista 4" class="miniatura" onclick="changeImage(this.src)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informações do Produto -->
+            <div class="col-lg-6">
+                <div class="product-info">
+                    <h1 class="product-title">Camiseta Orgânica Premium</h1>
+                    <p class="product-brand">EcoFashion</p>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="rating-info">
+                            <span class="rating-score">4.5</span>
+                            <span class="rating-count">(127 avaliações)</span>
+                        </div>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price">R$ 89,90</span>
+                        <span class="old-price">R$ 119,90</span>
+                        <span class="discount-badge">-25%</span>
+                    </div>
+
+                    <p class="product-description">
+                        Camiseta premium feita com algodão 100% orgânico certificado, cultivado sem pesticidas ou fertilizantes químicos. 
+                        Os corantes utilizados são naturais e livres de substâncias tóxicas, garantindo conforto e segurança para sua pele.
+                    </p>
+
+                    <div class="product-features">
+                        <h6>Características:</h6>
+                        <ul class="features-list">
+                            <li><i class="bi bi-check-circle"></i> 100% algodão orgânico certificado</li>
+                            <li><i class="bi bi-check-circle"></i> Corantes naturais e seguros</li>
+                            <li><i class="bi bi-check-circle"></i> Tecido macio e respirável</li>
+                            <li><i class="bi bi-check-circle"></i> Costuras reforçadas para durabilidade</li>
+                            <li><i class="bi bi-check-circle"></i> Embalagem plástico-free</li>
+                        </ul>
+                    </div>
+
+                    <!-- Seletores de Opções -->
+                    <div class="option-selector">
+                        <h6>Tamanho:</h6>
+                        <div class="size-options">
+                            <span class="size-option" onclick="selectSize(this)">P</span>
+                            <span class="size-option selected" onclick="selectSize(this)">M</span>
+                            <span class="size-option" onclick="selectSize(this)">G</span>
+                            <span class="size-option" onclick="selectSize(this)">GG</span>
+                            <span class="size-option disabled">XG</span>
+                        </div>
+                    </div>
+
+                    <div class="option-selector">
+                        <h6>Cor:</h6>
+                        <div class="color-options">
+                            <div class="color-option selected" style="background-color: #2c3e50;" onclick="selectColor(this)"></div>
+                            <div class="color-option" style="background-color: #e74c3c;" onclick="selectColor(this)"></div>
+                            <div class="color-option" style="background-color: #27ae60;" onclick="selectColor(this)"></div>
+                            <div class="color-option" style="background-color: #f39c12;" onclick="selectColor(this)"></div>
+                        </div>
+                    </div>
+
+                    <!-- Controles de Quantidade -->
+                    <div class="quantity-selection">
+                        <h6>Quantidade:</h6>
+                        <div class="quantity-controls">
+                            <div class="quantity-input-group">
+                                <button class="quantity-btn" onclick="decreaseQuantity()">
+                                    <i class="bi bi-dash"></i>
+                                </button>
+                                <input type="number" class="quantity-input" value="1" min="1" max="10" id="quantity">
+                                <button class="quantity-btn" onclick="increaseQuantity()">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                            <span class="stock-info">Em estoque: 15 unidades</span>
+                        </div>
+                    </div>
+
+                    <!-- Botões de Ação -->
+                    <div class="action-buttons">
+                        <button class="add-to-cart-btn" onclick="addToCart(1)">
+                            <i class="bi bi-cart-plus me-2"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                        <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Informações Adicionais -->
+                    <div class="additional-info">
+                        <div class="info-item">
+                            <span class="info-label">SKU:</span>
+                            <span class="info-value">CAM-ORG-001</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Categoria:</span>
+                            <span class="info-value">Moda Sustentável</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Material:</span>
+                            <span class="info-value">Algodão Orgânico</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Peso:</span>
+                            <span class="info-value">180g</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Origem:</span>
+                            <span class="info-value">Brasil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Abas de Informações -->
+        <div class="product-tabs">
+            <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">
+                        Descrição
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab">
+                        Especificações
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">
+                        Avaliações
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="shipping-tab" data-bs-toggle="tab" data-bs-target="#shipping" type="button" role="tab">
+                        Envio
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="productTabsContent">
+                <div class="tab-pane fade show active" id="description" role="tabpanel">
+                    <h4>Descrição Detalhada</h4>
+                    <p>
+                        Nossa Camiseta Orgânica Premium representa o compromisso da EcoTrend com a sustentabilidade e qualidade. 
+                        Cada peça é cuidadosamente confeccionada usando apenas os melhores materiais orgânicos disponíveis.
+                    </p>
+                    <p>
+                        O algodão orgânico utilizado é cultivado em fazendas certificadas que seguem rigorosos padrões ambientais e sociais. 
+                        Este processo não apenas protege o meio ambiente, mas também garante que os trabalhadores agrícolas trabalhem em condições seguras e justas.
+                    </p>
+                    <p>
+                        Os corantes naturais são extraídos de plantas, frutas e minerais, eliminando completamente o uso de produtos químicos tóxicos. 
+                        O resultado é uma camiseta que não apenas se parece boa, mas também faz bem para você e para o planeta.
+                    </p>
+                </div>
+
+                <div class="tab-pane fade" id="specifications" role="tabpanel">
+                    <h4>Especificações Técnicas</h4>
+                    <table class="specifications-table">
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th>Especificação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Material Principal</td>
+                                <td>100% Algodão Orgânico</td>
+                            </tr>
+                            <tr>
+                                <td>Gramatura</td>
+                                <td>180g/m²</td>
+                            </tr>
+                            <tr>
+                                <td>Tecido</td>
+                                <td>Malha 100% algodão</td>
+                            </tr>
+                            <tr>
+                                <td>Corantes</td>
+                                <td>100% Naturais</td>
+                            </tr>
+                            <tr>
+                                <td>Certificação</td>
+                                <td>GOTS (Global Organic Textile Standard)</td>
+                            </tr>
+                            <tr>
+                                <td>Lavagem</td>
+                                <td>Máquina 30°C</td>
+                            </tr>
+                            <tr>
+                                <td>Secagem</td>
+                                <td>Natural</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tab-pane fade" id="reviews" role="tabpanel">
+                    <h4>Avaliações dos Clientes</h4>
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">Maria Silva</span>
+                            <span class="review-date">15/01/2024</span>
+                        </div>
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">
+                            Excelente qualidade! A camiseta é super macia e confortável. Adorei saber que é feita com materiais sustentáveis. 
+                            Recomendo muito!
+                        </p>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="reviewer-name">João Santos</span>
+                            <span class="review-date">12/01/2024</span>
+                        </div>
+                        <div class="review-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <p class="review-text">
+                            Muito boa! O tecido é de qualidade e a cor permanece mesmo após várias lavagens. 
+                            Preço justo para um produto orgânico.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="shipping" role="tabpanel">
+                    <h4>Informações de Envio</h4>
+                    <p>
+                        <strong>Prazo de Envio:</strong> 2-5 dias úteis para todo o Brasil
+                    </p>
+                    <p>
+                        <strong>Frete Grátis:</strong> Para compras acima de R$ 99,90
+                    </p>
+                    <p>
+                        <strong>Rastreamento:</strong> Todos os pedidos incluem código de rastreamento
+                    </p>
+                    <p>
+                        <strong>Embalagem:</strong> Utilizamos embalagens 100% recicláveis e plástico-free
+                    </p>
+                    <p>
+                        <strong>Devolução:</strong> 30 dias para troca ou devolução, sem perguntas
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produtos Relacionados -->
+        <div class="related-products">
+            <h3>Produtos Relacionados</h3>
+            <div class="related-grid">
+                <div class="related-product-card">
+                    <div class="related-product-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Calça Jeans Sustentável">
+                    </div>
+                    <div class="related-product-info">
+                        <h5 class="related-product-title">Calça Jeans Sustentável</h5>
+                        <div class="related-product-price">R$ 159,90</div>
+                        <button class="related-product-btn" onclick="addToCart(9)">
+                            <i class="bi bi-cart-plus me-2"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <div class="related-product-card">
+                    <div class="related-product-image">
+                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vestido Orgânico">
+                    </div>
+                    <div class="related-product-info">
+                        <h5 class="related-product-title">Vestido Orgânico</h5>
+                        <div class="related-product-price">R$ 189,90</div>
+                        <button class="related-product-btn" onclick="addToCart(10)">
+                            <i class="bi bi-cart-plus me-2"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <div class="related-product-card">
+                    <div class="related-product-image">
+                        <img src="https://images.unsplash.com/photo-1544866092-1677b00f868b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Casaco Sustentável">
+                    </div>
+                    <div class="related-product-info">
+                        <h5 class="related-product-title">Casaco Sustentável</h5>
+                        <div class="related-product-price">R$ 249,90</div>
+                        <button class="related-product-btn" onclick="addToCart(11)">
+                            <i class="bi bi-cart-plus me-2"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Sobre a EcoTrend</h5>
+                    <p>Somos uma empresa comprometida com a sustentabilidade, oferecendo produtos que respeitam o meio ambiente e promovem um estilo de vida consciente.</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Links Úteis</h5>
+                    <ul>
+                        <li><a href="../../index.html">Início</a></li>
+                        <li><a href="categorias.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Categorias</h5>
+                    <ul>
+                        <li><a href="categorias.html">Moda Sustentável</a></li>
+                        <li><a href="categorias.html">Beleza Natural</a></li>
+                        <li><a href="categorias.html">Casa Ecológica</a></li>
+                        <li><a href="categorias.html">Tecnologia Verde</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Contato</h5>
+                    <ul>
+                        <li><i class="bi bi-envelope me-2"></i>contato@ecotrend.com</li>
+                        <li><i class="bi bi-telephone me-2"></i>(11) 99999-9999</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>São Paulo, SP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EcoTrend. Todos os direitos reservados. </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
